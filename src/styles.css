@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
+html {
+    overflow-y: scroll;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
     height: 100vh;
     font-family: "Manrope", sans-serif;
     background-color: rgb(243, 243, 243);
+    background: center url("https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg");
+    background-size: auto;
 }
 
 nav {
@@ -45,4 +53,127 @@ button:hover {
 span {
     color: orange;
     font-size: xx-large;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+}
+
+.homepage-container {
+    margin-top: 150px;
+    display: grid;
+    background-color: #000000CC;
+    border-radius: 10px;
+    min-width: 600px;
+    max-width: 1000px;
+}
+
+.homepage-container div {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+    align-items: center;
+}
+
+.homepage-container div:nth-child(1) {
+    color: rgb(201, 136, 16);
+    font-size: 40px;
+}
+
+.homepage-container div:nth-child(2) {
+    color: rgb(219, 219, 219);
+    font-size: 22px;
+    line-height: 1.8em;
+}
+
+.menu-container {
+    margin: 20px;
+}
+
+.menu-grid {
+    display: grid;
+    padding-bottom: 100px;
+    gap: 20px;
+}
+
+.menuitem-card {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    background-color: rgb(225, 225, 233);
+    border-left: 8px solid orange;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.menuitem-card div {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.menuitem-card div:nth-child(1) {
+    font-weight: bold;
+}
+
+.menuitem-card div:nth-child(3) {
+    justify-self: flex-end;
+    font-size: 20px;
+}
+
+.menu-subtitle {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(33, 65, 168);
+    justify-self: start;
+    margin-left: 10px;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.menu-title {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: orange;
+    text-align: center;
+    justify-self: stretch;
+    padding: 5px 100px;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.info div {
+    flex: 1 1 300px;
+    background-color: white;
+    padding: 1rem;
+    border-left: 5px solid orange;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.about-container {
+    margin: 20px;
+}
+
+.about-section {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-section p {
+    background-color: #000000CC;
+    padding: 20px;
+    border-radius: 10px;
 }
